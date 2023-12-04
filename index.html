@@ -2,235 +2,300 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Portfolio - Laura Gómez Ruiz</title>
+    <meta name="title" content="Portfolio Template - Open source" />
+    <meta
+      name="description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
     />
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/CommunityPro/portfolio-html"
+    />
+    <meta property="og:title" content="Portfolio Template - Open source" />
+    <meta
+      property="og:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+    />
+    <meta
+      property="og:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/CommunityPro/portfolio-html"
+    />
+    <meta property="twitter:title" content="Portfolio Template - Open source" />
+    <meta
+      property="twitter:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+    />
+    <meta
+      property="twitter:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
+    />
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Laura Gómez Ruiz</title>
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="https://lgomezruiz.github.io/Portfolio" class="link"
-          >LGR.</a
-        >
-      </h3>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo"> LGR
+            <!-- <a href="https://github.com/CommunityPro/portfolio-html"
+              ><img src="./assets/logo.png" alt="Your Logo"
+            /></a> -->
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#skills">SKILLS</a></li>
+            <li><a class="nav-link" href="#projects">PROJECTS & COLLABORATIONS</a></li>
+            <li><a class="nav-link" href="#contact">CONTACT</a></li>
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="https://drive.google.com/file/d/1jehl2ZRVgVsoao3E8P63n1PK11BAQObe/view?usp=sharing"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
-        </ul>
-
-        <button type="button" aria-label="toggle theme" class="btn btn--icon">
-          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
-        </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
+            </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
       </nav>
+
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/profile-pic-D5D9F4-background.png"
+          alt=""
+        />
+        
+        <div class="content-text">
+          <h1>Hi I'm Laura</h1>
+          <p>
+            A Java Junior Developer and Marine Scientist.
+          </p>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <a
+              href="https://www.linkedin.com/in/lgomezruiz/"
+              class="btn btn-secondary"
+              target="_blank"
+              src="assets/linkedin-icon.svg"
+              >LinkedIn</a>
+            </li>
+            <li>
+              <a
+              href="https://github.com/lgomezruiz"
+              class="btn btn-secondary"
+              target="_blank"
+              src="assets/github-icon.svg"
+              >GitHub</a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
     </header>
 
-    <main>
-      <!-- About -->
-      <div class="about center">
-        <h1><span class="about__name">Laura Gómez Ruiz</span></h1>
-        <h3 class="about__role">A Java Junior Developer and Marine Scientist</h3>
-        <p class="about__desc">
-          From my academic steps in Marine Sciences to my search for knowledge in the digital world, my career has been and is an enriching path.
-          <br></br>
-          My passion for the environment led me to immerse myself in Marine Sciences, a multidisciplinary degree where I acquired a deep understanding of the importance of preserving and understanding our environment. However, my concern for providing innovative solutions prompted me to expand my horizons into the world of technology.
-          <br></br>
-          I decided to embark on the Higher Degree in Web Application Development. This change not only represented an evolution in my education, but a firm commitment to applying technology to address different challenges.
-          <br></br>
-          In my current search for a job opportunity as a Java Junior Developer, I am looking for an environment that will allow me to increase my experience in application development. My goal is to contribute to the design and implementation of technological solutions that drive efficiency and innovation.
+    <!-- Skills -->
+    <section id="skills" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Skills</h2>
+      </div>
+      <ul class="skills__list">
+        <li class="btn btn-secondary" target="_blank">Java</li>
+        <li class="btn btn-secondary" target="_blank">SQL</li>
+        <li class="btn btn-secondary" target="_blank">HTML</li>
+        <li class="btn btn-secondary" target="_blank">CSS</li>
+        <li class="btn btn-secondary" target="_blank">Git</li>
+        <li class="btn btn-secondary" target="_blank">NetBeans</li>
+        <li class="btn btn-secondary" target="_blank">MySQL</li>
+        <li class="btn btn-secondary" target="_blank">Visual Studio Code</li>
+        <li class="btn btn-secondary" target="_blank">GitHub</li>
+      </ul>
+    </section>
 
-        </p>
-
-        <div class="about__contact center">
-          <!-- <a href="https://example.com">
-            <span class="btn btn--outline">Resume</span>
-          </a> -->
-
-          <a
-            href="https://github.com/lgomezruiz"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a
-            href="https://linkedin.com/in/lgomezruiz"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <p>Check out my personal and collaborative projects</p>
       </div>
 
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">Projects</h2>
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Tic-Tac-Toe</h3>
+              <p>Java, Swing</p>
+              <p>Mythical Tic Tac Toe game with a simple and minimalist style.</p>
+            </div>
 
-        <div class="projects__grid">
-          
-          <!--DIGITAL CLOCK -->
-          <div class="project">
-            <h3>Digital Clock</h3>
-            <p class="project__description">
-              A simple digital clock that displays the local system time, day of the week and date
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Java</li>
-              <li class="project__stack-item">Swing</li>
-            </ul>
-
-            <a
-              href="https://github.com/lgomezruiz/Digital-Clock"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://github.com/lgomezruiz/Digital-Clock/blob/master/dist/DigitalClock.jar"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div> 
-
-          <!-- HOOKY WATERS -->
-          <div class="project">
-            
-            <h3>Hooky Waters</h3>
-            <p class="project__description">
-              A game for Android that we made using C# and the Unity graphics engine
-              <br></br>
-              Owner: Trinomio Studios
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">C#</li>
-              <li class="project__stack-item">Unity</li>
-            </ul>
-
-            <!--<a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a> -->
-            <a
-              href="https://trinomiostudios.itch.io/hooky-waters-webgl"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-            
+            <div class="project-link">
+              <a href="#https://github.com/lgomezruiz/Tic-Tac-Toe" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#https://drive.google.com/file/d/1iQmw13P-scauu2lkFiJSz8FQsF-xqlBE/view?usp=sharing" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
           </div>
-
-          
-          <!--
-          <div class="project">
-            <h3>Project 3</h3>
-            <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
-
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div> -->
         </div>
-      </section>
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Java</li>
-          <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">NetBeans</li>
-          <li class="skills__list-item btn btn--plain">MySQL</li>
-          <li class="skills__list-item btn btn--plain">Visual Studio Code</li>
-          <li class="skills__list-item btn btn--plain">GitHub</li>
-          
-        </ul>
-      </section>
+        <!-- Project 2 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Calculator</h3>
+              <p>Java, Swing</p>
+              <p>Basic and minimalist calculator with Java.</p>
+            </div>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
+            <div class="project-link">
+              <a href="#https://github.com/lgomezruiz/Calculator" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#https://drive.google.com/file/d/1ZpZ-ZnmI3zllSkK1JdmeNi1TrKTkti5v/view?usp=sharing" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porject 3 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Digital Clock</h3>
+              <p>Java, Swing</p>
+              <p>A simple digital clock that displays the local system time, day of the week and date</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#https://github.com/lgomezruiz/Digital-Clock" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#https://github.com/lgomezruiz/Digital-Clock/blob/master/dist/DigitalClock.jar" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Hooky Waters</h3>
+              <p>C#, Unity</p>
+              <p>A game for Android that we made using C# and the Unity graphics engine</p>
+            </div>
+
+            <div class="project-link">
+              <!--<a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+              <a href="#https://trinomiostudios.itch.io/hooky-waters-webgl" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- <a href="#" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a> -->
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
         <h2 class="section__title">Contact</h2>
         <a href="mailto:lauragruiz98@gmail.com">
-          <span class="btn btn--outline">Email me</span>
+          <span class="btn btn-secondary" target="_blank">Email me</span>
         </a>
-      </section>
-    </main>
+      </div>
+      
+    </section>
 
-    <footer class="footer">
-      <a
-        href="https://github.com/lgomezruiz/Portfolio"
-        class="link footer__link"
-      >
-        Created By Laura Gómez Ruiz
-      </a>
+    <footer id="footer">
+      <div class="container">
+        
+        <!-- <div class="social">
+          <a href="#" target="_blank"
+            ><img src="./assets/facebook-icon.svg" alt="Facebook"
+          /></a>
+          <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          <a href="#" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <a href="#" target="_blank"
+            ><img src="./assets/hashnode-icon.svg" alt="Hashnode"
+          /></a>
+        </div> -->
+        
+        <p>Copyright &copy; Laura Gómez Ruiz <span id="datee"></span>, All rights reserved</p>
+      </div>
     </footer>
-
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    </div>
-
-    <script src="./script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
