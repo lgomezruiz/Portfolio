@@ -8,7 +8,7 @@
 .container {
   max-width: var(--width-medium);
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 0rem;
 }
 
 h1::selection,
@@ -88,17 +88,17 @@ h2::selection {
 
 .content-text {
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 .content-text h2 {
-  font-size: 3rem;
-  line-height: 1.2;
+  font-size: 2rem;
+  line-height: 2;
   transition: 0.2s ease-in-out;
 }
 
 .content-text p {
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 0 auto;
   max-width: 700px;
 }

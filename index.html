@@ -9,10 +9,10 @@
     <meta name="title" content="Portfolio Template - Open source" />
     <meta
       name="description"
-      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+      content="Personal portfolio of Laura Gómez Ruiz"
     />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook 
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
@@ -26,9 +26,9 @@
     <meta
       property="og:image"
       content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
-    />
+    /> -->
 
-    <!-- Twitter -->
+    <!-- Twitter 
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
@@ -42,10 +42,11 @@
     <meta
       property="twitter:image"
       content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
-    />
+    /> -->
 
     <!-- Link -->
-    <link
+
+    <!-- <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/favicon/apple-touch-icon.png"
@@ -72,9 +73,9 @@
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
-    />
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+      href="assets/favicon/android-chrome-512x512.png" 
+    /> -->
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link
       rel="stylesheet"
@@ -91,10 +92,8 @@
       <nav class="navbar">
         <div class="container">
           <!-- Logo -->
-          <h1 id="logo"> LGR
-            <!-- <a href="https://github.com/CommunityPro/portfolio-html"
-              ><img src="./assets/logo.png" alt="Your Logo"
-            /></a> -->
+          <h1 id="logo">
+            <img src="./assets/logo.png" alt="Your Logo"/>
           </h1>
           <!-- Navbar links -->
           <ul class="nav-menu">
@@ -104,7 +103,7 @@
             <li>
               <a
                 class="nav-link btn btn-primary"
-                href="https://drive.google.com/file/d/1jehl2ZRVgVsoao3E8P63n1PK11BAQObe/view?usp=sharing"
+                href="https://drive.google.com/file/d/1msvOkT62_tASL2nAz6QBtnBMgR2KCt2I/view?usp=sharing"
                 >RESUME <i class="fas fa-arrow-right"></i
               ></a>
             </li>
@@ -137,7 +136,7 @@
         <div class="content-text">
           <h1>Hi I'm Laura</h1>
           <p>
-            A Java Junior Developer and Marine Scientist.
+            Java Junior Developer
           </p>
         </div>
 
@@ -152,11 +151,11 @@
               >LinkedIn</a>
             </li>
             <li>
+              
               <a
               href="https://github.com/lgomezruiz"
               class="btn btn-secondary"
               target="_blank"
-              src="assets/github-icon.svg"
               >GitHub</a>
             </li>
           </ul>
@@ -169,9 +168,9 @@
     <section id="skills" class="project-container container">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Skills</h2>
+        <h2>SKILLS</h2>
       </div>
-      <ul class="skills__list">
+      <ul class="skills__list"> 
         <li class="btn btn-secondary" target="_blank">Java</li>
         <li class="btn btn-secondary" target="_blank">SQL</li>
         <li class="btn btn-secondary" target="_blank">HTML</li>
@@ -188,7 +187,7 @@
     <section id="projects" class="project-container container">
       <div class="division"></div>
       <div class="content-text">
-        <h2>Projects</h2>
+        <h2>PROJECTS</h2>
         <p>Check out my personal and collaborative projects</p>
       </div>
 
@@ -225,7 +224,7 @@
           </div>
         </div>
 
-        <!-- Porject 3 -->
+        <!-- Project 3 -->
         <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
@@ -268,12 +267,49 @@
     <section id="contact" class="project-container container">
       <div class="division"></div>
       <div class="content-text">
-        <h2 class="section__title">Contact</h2>
-        <a href="mailto:lauragruiz98@gmail.com">
-          <span class="btn btn-secondary" target="_blank">Email me</span>
-        </a>
-      </div>
-      
+        <h2 class="section__title">CONTACT</h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name:</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email:</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message:</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button class="btn btn-secondary" target="_blank"">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>      
     </section>
 
     <footer id="footer">
