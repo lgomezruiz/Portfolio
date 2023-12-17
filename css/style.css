@@ -9,8 +9,8 @@
 /* variables */
 :root {
   /* Colors */
-  --primary-color: #D5D9F4;
-  --secondary-color: #dee1f5;
+  --primary-color: #CEE7FF;
+  --secondary-color: #e8f3ff;
   --bg-primary: #ffffff;
   --text-color: #222222;
   --text-color-two: #ffffff;
@@ -32,8 +32,8 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: #D5D9F4;
-  --secondary-color: #dee1f5;
+  --primary-color: #CEE7FF;
+  --secondary-color: #e8f3ff;
   --bg-primary: #000000;
   --text-color: #ffffff;
   --text-color-two: #222222;
@@ -63,6 +63,7 @@ ul {
 li {
   list-style: none;
   display: inline-block;
+  margin-right: 30px;
 }
 
 a {
@@ -168,6 +169,14 @@ body {
   background-color: var(--card-background);
   margin: 2rem 0;
 }
+
+/* About me */
+
+.left-paragraph {
+  text-align: justify;
+}
+
+
 /* Projects */
 #projects {
   display: flex;
@@ -217,22 +226,22 @@ body {
   background: white;
   padding: 1rem;
   margin-top: 1rem;
-  max-width: 60rem;
+  max-width: 30rem;
   text-align: right;
   width: 95%;
   border-radius: 5px;
   margin: 5rem auto 0 auto; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 30em) {
     .contact__form-container {
       padding: 3rem; } }
 .contact__form-field {
   margin-bottom: 1rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 30em) {
     .contact__form-field {
       margin-bottom: 1rem; } }
 .contact__form-label {
   color: #666;
-  font-size: 1.4rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 700;
   margin-bottom: 1rem;

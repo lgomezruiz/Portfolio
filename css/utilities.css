@@ -8,13 +8,27 @@
 .container {
   max-width: var(--width-medium);
   margin: 0 auto;
-  padding: 1rem 0rem;
+  padding: 1rem 2rem;
 }
 
 h1::selection,
 h2::selection {
   color: #111;
   background: var(--primary-color);
+}
+
+/* Icons */
+.link-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 /* Buttons */
